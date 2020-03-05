@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int fim = Integer.parseInt(editTextfinal.getText().toString());
 
         Random rand = new Random();
-        int numsorteado = rand.nextInt((fim - inicial) )+ inicial;
+        int numsorteado = rand.nextInt((fim - inicial) +1  )+ inicial;
 
         textViewResultado.setText(Integer.toString((numsorteado)));
 
